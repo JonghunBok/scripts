@@ -23,6 +23,7 @@ if [ -f $1 ]; then
     pandoc \
       -o $filenamewoext.pdf \
       --pdf-engine=xelatex \
+      --verbose \
       -t beamer \
       -V mainfont="NanumGothic" \
       $filename
